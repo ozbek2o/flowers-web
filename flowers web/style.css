@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 7px;
+}
+
+body {
+    font-family: 'Averia Serif Libre', cursive;
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 1.6rem 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.8s;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+header {
+    height: 45rem;
+}
+
+header .bg-image {
+    position: absolute;
+    background-image: url(img/ignacio-correia-1_yycyoMT6g-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 45rem;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+header p {
+    color: rgb(201, 193, 193);
+}
+
+header h1 {
+    padding: 11rem;
+    padding-bottom: 0;
+}
+
+.icon {
+    width: 3%;
+    height: auto;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sosyal {
+    position: relative;
+    padding: 5px;
+    display: block;
+    margin: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.menu a {
+    position: relative;
+    padding: 5px;
+    display: block;
+}
+
+.menu a::before {
+    content: '';
+    background-color: #aeaeae;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 1s ease-in-out;
+}
+
+.menu a:hover::before {
+    transition: 1s ease-in-out;
+    transform: scaleX(1);
+}
+
+.col {
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 2px rgba(225, 231, 241, 0.644);
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #333;
+}
+
+#section-a {
+    background-color: #aeaeae;
+    color: #333;
+    padding: 3.2rem 0;
+}
+
+#section-b {
+    padding: 2rem;
+}
+
+#section-b ul {
+    list-style: none;
+}
+
+#section-b li {
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.col-content {
+    padding: 1.5rem;
+}
+
+.btndevam:link {
+    display: block;
+    width: 150px;
+    height: 45px;
+    padding: 10px 20px;
+    background-color: #0071ce;
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 13px;
+    margin: auto;
+}
+
+.btndevam:hover {
+    animation: goz-kırpma 500ms ease-in-out, buyut 1s ease-in-out infinite;
+}
+
+@keyframes goz-kırpma {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes buyut {
+    33% {
+        transform: scale(1);
+    }
+    66% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.section-c {
+    background-color: #aeaeae;
+    color: #333;
+    padding: 5rem;
+}
+
+.section-d .box {
+    padding: 5rem;
+}
+
+.section-d .boxb {
+    padding: 5rem;
+    background-color: rgb(43, 40, 40);
+}
+
+.section-d .box:first-child {
+    background-color: #2690d4;
+}
+
+footer {
+    padding: 5rem;
+    background: #000;
+}
+
+footer a {
+    color: #2690d4;
+}
+
+@media screen and (min-width:800px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #section-b li {
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+    .box {
+        width: 50%;
+        float: left;
+    }
+    html {
+        font-size: 12px;
+    }
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(img/xavi-moll-u-Q14NlYLEI-unsplash.jpg);
+    background-size: cover;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p {
+    font-weight: 500;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactınfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactınfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactınfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactınfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactınfo .box .text h3 {
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputbox input,
+.contactForm .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputbox span {
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 30px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputbox textarea {
+    margin-bottom: -17px;
+}
+
+.contactForm .inputbox input:focus~span,
+.contactForm .inputbox input:valid~span,
+.contactForm .inputbox textarea:focus~span,
+.contactForm .inputbox textarea:valid~span {
+    color: #ee3875;
+    font-size: 12px;
+    transform: translate(-10px);
+}
+
+.button {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #403eb3;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: #e91e63
+}
+
+.button:active {
+    background-color: #e91e63;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#showcase {
+    background-image: url(img/irina-iriser-mNz9Pa3tz34-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* vh -  view port height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#showcase h1 {
+    font-size: 50px;
+    line-height: 1.2em;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+#showcase .button {
+    font-size: 18px;
+    text-decoration: none;
+    color: #0aecec;
+    border: #0ebec4 1px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+#showcase .button:hover {
+    background: #926239;
+    color: #fff;
+}
+
+.galresim {
+    width: 22%;
+    height: 200px;
+    border-radius: 5px;
+    opacity: 0.8;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+    margin: 10px;
+    transition: all 0, 6s;
+    object-fit: cover;
+}
+
+.galresim:hover {
+    opacity: 1;
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+#hakkimizdarsm {
+    width: 350px;
+    height: 300px;
+    float: left;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.hakyazi {
+    margin-right: 15px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 40px;
+    color: white;
+}
+
+h3 {
+    color: rgb(187, 7, 163);
+}
